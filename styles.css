@@ -9,7 +9,7 @@ body {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../images/faveladovidigal.jpg");
+    url("faveladovidigal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -51,7 +51,7 @@ header a {
 footer {
   color: white;
   background-image: linear-gradient(rgba(39, 32, 68, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/vidigalfooter.png);
+    url(vidigalfooter.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0;
