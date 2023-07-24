@@ -12,6 +12,7 @@ header {
     url("faveladovidigal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
   color: white;
   text-align: center;
   padding: 200px 0;
@@ -50,10 +51,13 @@ header a {
 }
 footer {
   color: white;
- background-image: linear-gradient(rgba(39, 32, 68, 0.7), rgba(39, 32, 68, 1)),
+  background-image: linear-gradient(rgba(39, 32, 68, 0.7), rgba(39, 32, 68, 1)),
     url(vidigalfooter.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
+  margin-right: 10px;
+  margin-left: 10px;
   padding: 100px 0;
 }
 footer h3 {
@@ -83,15 +87,49 @@ section {
   max-width: 1400px;
   margin: 0 auto;
   padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 64px;
+}
+.grid grid-2-columns {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 a:hover {
   cursor: pointer;
   background-color: rgba(48, 102, 92, 1);
   text-decoration-line: none;
+}
+main {
+  background-color: white;
+}
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+main p {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+  font-size: 16px;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
 }
 
 @media (max-width: 800px) {
@@ -107,6 +145,9 @@ a:hover {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid grid-2-columns {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -132,4 +173,17 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 1400px) {
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+}
+@media (max-width: 360px) {
+  .grid-2-columns img {
+    max-width: 92%;
+    height: auto;
+  }
+}
+
 
