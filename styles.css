@@ -173,7 +173,7 @@ main h3 {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .grid-2-columns {
     grid-template-columns: 1fr;
     grid-gap: 0;
@@ -183,6 +183,24 @@ main h3 {
   .grid-2-columns img {
     max-width: 92%;
     height: auto;
+  }
+}
+@media only screen and (min-width: 820px) {
+  footer {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 360px) {
+  footer {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 1430px) {
+  footer {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
