@@ -199,8 +199,8 @@ main h3 {
 }
 @media only screen and (min-width: 1430px) {
   footer {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 
