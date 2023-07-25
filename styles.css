@@ -10,7 +10,7 @@ body {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../images/faveladovidigal.jpg");
+    url("faveladovidigal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -53,7 +53,7 @@ header a {
 footer {
   color: white;
   background-image: linear-gradient(rgba(39, 32, 68, 0.7), rgba(39, 32, 68, 1)),
-    url(../images/vidigalfooter.png);
+    url(vidigalfooter.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -151,8 +151,8 @@ main h3 {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Adjust this property as per your preference */
-  margin: 0; /* Optional, for creating spacing between the cards */
+  justify-content: space-between; 
+  margin: 0; 
   margin-right: 15px;
   padding-top: 40px;
 }
@@ -160,8 +160,8 @@ main h3 {
 .card {
   width: calc(
     33.33% - 30px
-  ); /* Adjust this property to control the card width */
-  margin: 12px; /* Optional, for creating spacing between the cards */
+  );
+  margin: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 .my-button {
@@ -186,7 +186,6 @@ main h3 {
   display: block;
   margin: 0 auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-
   border-radius: 8px;
 }
 
@@ -204,11 +203,6 @@ main h3 {
   grid-gap: 5px;
 }
 .cardandvideos {
-  background: #fdb243;
-  background: #6a486c;
-  background: #2d2547;
-  background: #ffe4b5;
-  background: #ffa500;
   background: #ffe4b5;
 }
 
