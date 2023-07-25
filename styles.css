@@ -1,15 +1,16 @@
 body {
-  font-family: "Poppins", "sans-serif";
-  background-color: #30665c;
+  font-family: "Poppins", "sans-serif" !important;
+  background-color: #30665c !important;
 }
 .container {
   max-width: 1400px;
   margin: 0 auto;
+  background-color: #30665c;
 }
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("faveladovidigal.jpg");
+    url("../images/faveladovidigal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -52,7 +53,7 @@ header a {
 footer {
   color: white;
   background-image: linear-gradient(rgba(39, 32, 68, 0.7), rgba(39, 32, 68, 1)),
-    url(vidigalfooter.png);
+    url(../images/vidigalfooter.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -64,16 +65,18 @@ footer h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
+  margin-left: 60px;
 }
 footer p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   opacity: 0.6;
+  margin-left: 60px;
 }
 footer li {
   list-style: none;
-  margin: 0;
+  margin-left: 60px;
   padding: 0;
 }
 footer ul {
@@ -90,6 +93,13 @@ section {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+section.secondary {
+  background: #f5f5f5;
+}
+
+.text-center {
+  text-align: center;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
@@ -98,14 +108,20 @@ section {
 .grid grid-2-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
+.grid .grid-2-columns,
+img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
 a:hover {
   cursor: pointer;
+  color: white;
   background-color: rgba(48, 102, 92, 1);
   text-decoration-line: none;
 }
 main {
   background-color: white;
 }
+
 main h2 {
   font-weight: 700;
   font-size: 16px;
@@ -117,12 +133,12 @@ main h2 {
   margin: 0;
 }
 main p {
-  font-style: normal;
+  font-style: poppins;
   font-weight: 400;
   line-height: 1.5;
   color: #272044;
   opacity: 0.7;
-  font-size: 16px;
+  font-size: 18px;
 }
 main h3 {
   font-weight: 700;
@@ -130,6 +146,88 @@ main h3 {
   line-height: 1.5;
   color: #272044;
   margin: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust this property as per your preference */
+  margin: 0; /* Optional, for creating spacing between the cards */
+  margin-right: 15px;
+  padding-top: 40px;
+}
+
+.card {
+  width: calc(
+    33.33% - 30px
+  ); /* Adjust this property to control the card width */
+  margin: 12px; /* Optional, for creating spacing between the cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+.my-button {
+  background-color: white !important;
+  color: black !important;
+  border: none !important;
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+.my-button:hover {
+  color: rgba(48, 102, 92, 0.9) !important;
+  cursor: pointer !important;
+}
+.rating {
+  color: #fdb243;
+}
+
+.grid-video {
+  width: 75%;
+  aspect-ratio: 16/9;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+
+  border-radius: 8px;
+}
+
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  padding-bottom: 20px;
+}
+
+.grid-container-2 {
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+.cardandvideos {
+  background: #fdb243;
+  background: #6a486c;
+  background: #2d2547;
+  background: #ffe4b5;
+  background: #ffa500;
+  background: #ffe4b5;
+}
+
+@media (max-width: 768px) {
+  .about-site {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .grid-container-1,
+  .grid-container-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 817px) {
+  .card-container {
+    display: none;
+  }
 }
 
 @media (max-width: 800px) {
@@ -203,5 +301,6 @@ main h3 {
     margin-left: 0px;
   }
 }
+
 
 
