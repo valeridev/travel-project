@@ -120,6 +120,7 @@ a:hover {
 }
 main {
   background-color: white;
+  padding-bottom: 20px;
 }
 
 main h2 {
@@ -131,6 +132,7 @@ main h2 {
   opacity: 0.3;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 20px;
 }
 main p {
   font-style: poppins;
