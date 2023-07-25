@@ -261,7 +261,7 @@ img {
   ); 
 }
 
-@media (min-width: 821px) {
+@media (max-width: 821px) {
   .enlarge-on-hover:hover {
     transform: scale(
       1.3
