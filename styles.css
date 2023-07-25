@@ -1,11 +1,11 @@
 body {
   font-family: "Poppins", "sans-serif" !important;
-  background-color: #30665c !important;
+background: #008e3d !important;
 }
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  background-color: #30665c;
+background: #f1bd03;
 }
 
 header {
