@@ -51,6 +51,7 @@ header a {
   padding: 16px 32px;
   display: inline-block;
   margin-top: 32px;
+  border-radius: 4px;
 }
 footer {
   color: white;
@@ -118,6 +119,8 @@ a:hover {
   cursor: pointer;
   color: white;
   background-color: rgba(48, 102, 92, 1);
+  background-color: #008e3c;
+  opacity: 0.8;
   text-decoration-line: none;
 }
 main {
