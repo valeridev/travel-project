@@ -110,6 +110,7 @@ background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+  padding-top:70px;
 }
 .grid grid-2-columns {
   grid-template-columns: 1fr 1fr 1fr;
