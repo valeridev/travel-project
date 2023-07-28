@@ -16,7 +16,7 @@ header {
     url("faveladovidigal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-background position: cover cover;
+  background-position: center center;
   color: white;
   text-align: center;
   padding: 200px 0;
